@@ -4,8 +4,7 @@ from flask import current_app, _app_ctx_stack
 
 class Minio(object):
     """This class is used to control the Minio integration to one or more Flask
-    applications. Depending on how you initialize the object it is usable right
-    away or will attach as needed to a Flask application.
+    applications.
     """
 
     def __init__(self, app=None):
