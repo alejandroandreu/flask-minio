@@ -4,7 +4,7 @@ Flask-Minio
 
 Adds Minio support to your Flask application
 """
-from setuptools import setup
+from setuptools import setup, find_packages
 
 
 with open('README.md', 'r') as fh:
@@ -12,7 +12,7 @@ with open('README.md', 'r') as fh:
 
 setup(
     name='Flask-Minio',
-    version='0.1',
+    version='0.1.1',
     url='https://github.com/alejandroandreu/flask-minio',
     license='BSD',
     author='Alejandro Andreu',
@@ -20,7 +20,7 @@ setup(
     description='Adds Minio support to your Flask application',
     long_description=long_description,
     long_description_content_type='text/markdown',
-    py_modules=['flask_minio'],
+    packages=find_packages(),
     zip_safe=False,
     platforms='any',
     install_requires=[
