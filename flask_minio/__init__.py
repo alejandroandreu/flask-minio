@@ -34,7 +34,7 @@ class Minio(object):
     def teardown(self, exception):
         ctx = _app_ctx_stack.top
         if hasattr(ctx, 'minio'):
-            ctx.minio.close()
+            ctx.minio._http.clear()
 
     @property
     def connection(self):
