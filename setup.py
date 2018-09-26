@@ -27,6 +27,12 @@ setup(
         'Flask',
         'minio'
     ],
+    tests_require=[
+        'pytest>=3.8.1'
+    ],
+    setup_requires=[
+        'pytest-runner>=4.2'
+    ],
     classifiers=[
         'Environment :: Web Environment',
         'Intended Audience :: Developers',
