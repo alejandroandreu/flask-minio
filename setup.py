@@ -28,7 +28,9 @@ setup(
         'minio'
     ],
     tests_require=[
-        'pytest>=3.8.1'
+        'pytest>=3.8.1',
+        'Flask',
+        'minio'
     ],
     setup_requires=[
         'pytest-runner>=4.2'
