@@ -25,6 +25,14 @@ app.config.from_pyfile('config.cfg')
 storage = Minio(app)
 ```
 
+Once you've done this you're ready to spawn connections to your Minio endpoint like this:
+
+```python
+@app.route('/upload')
+def upload_file():
+    res = db.connection.fput_object('maylogs', 'pumaserver_debug.log', '/tmp/pumaserver_debug.log')
+```
+
 To further customize your deployment, `flask_minio` can use the following parameters
 from the application configuration:
 
