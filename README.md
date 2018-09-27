@@ -2,6 +2,14 @@
 Flask extension to interface with Minio. It has no fancy features, but just
 allows you to properly interface your Flask application with the `minio` library.
 
+## Install
+
+You can either download the source code of this repository or install it via `pip`:
+
+```bash
+pip install Flask-Minio
+```
+
 ## Usage
 
 The simplest way to get started with this Flask extension is to pass the application
