@@ -12,7 +12,7 @@ with open('README.md', 'r') as fh:
 
 setup(
     name='Flask-Minio',
-    version='0.1.1',
+    version='0.1.2',
     url='https://github.com/alejandroandreu/flask-minio',
     license='BSD',
     author='Alejandro Andreu',
